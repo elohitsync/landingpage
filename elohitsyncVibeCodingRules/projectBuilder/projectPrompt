@@ -1,0 +1,118 @@
+# 🎯 Objetivo
+Crie uma **landing page ultra moderna, responsiva e com apelo tecnológico**, voltada à apresentação institucional da **Elohit Sync**, uma agência especializada em gestão de inteligência artificial aplicada a processos empresariais e automações inteligentes. A estética deve transmitir inovação, sofisticação e fluidez.
+
+---
+
+# ⚙️ Requisitos Técnicos
+
+## Frameworks & Ferramentas
+- Front-end: **Next.js (React 18+) com TailwindCSS**
+- Deploy: **Vercel-ready**, com estrutura otimizada para Core Web Vitals
+- Animações: **Framer Motion** (transições suaves e responsivas)
+- Acessibilidade: WCAG 2.1, uso de ARIA roles
+- Componentização moderna: uso de **shadcn/ui**, `lucide-react` e `@heroicons/react`
+- Performance: lazy loading, SSR/ISR otimizado
+- SEO: estrutura semântica, metatags básicas, OpenGraph configurado
+- Versão mobile: mobile-first com layout fluido
+- Layout grid-based com design visual escalável (ex: `grid-cols-12` com breakpoints definidos)
+- Arquitetura limpa e modularizada (Atomic Design simplificado: `components/`, `sections/`, `hooks/`, `lib/`)
+- Preparado para integração futura com `n8n` via webhooks ou client-side triggers
+
+---
+
+# 🧱 Estrutura de Sessões (modularizada como componentes)
+
+## 1. Hero Section
+- `components/sections/Hero.tsx`
+  - Título impactante com destaque de palavras via gradiente ou stroke animado
+  - Subtítulo com foco em resultado
+  - Duplo CTA com variantes (primário + ghost)
+  - Imagem/ilustração interativa em SVG animado (ex: fluxo de automações com AI nodes flutuantes)
+  - Background animado em `canvas` ou `noise` com `framer-motion`
+
+## 2. O que fazemos na prática
+- `components/sections/WhatWeDo.tsx`
+  - Blocos horizontais com ícones animados
+  - Destaque de ferramentas (GPT, RPA, n8n, APIs)
+  - Tom de voz objetivo e técnico
+
+## 3. Benefícios da IA
+- `components/sections/Benefits.tsx`
+  - Cards interativos com hover e microinterações
+  - Ícones modernos com `lucide-react`
+  - Textos concisos e orientados a ROI
+
+## 4. Aplicações por Segmento
+- `components/sections/UseCases.tsx`
+  - Carrossel responsivo ou tabs por setor
+  - Cards com ilustrações vetoriais
+  - Títulos de fácil escaneabilidade
+
+## 5. Prova Social / Casos de Sucesso
+- `components/sections/Testimonials.tsx`
+  - Layout em carrossel ou grid com destaque ao resultado alcançado
+  - Componente com `motion.div` para entrada suave
+
+## 6. Serviços
+- `components/sections/Services.tsx`
+  - Grid com animação de entrada por item
+  - Layout similar a “feature list” com ícones e tópicos
+
+## 7. Nosso Processo
+- `components/sections/Process.tsx`
+  - Linha do tempo com ícones customizados e transições por `step`
+  - Estilo progress tracker
+
+## 8. Confiança e Parcerias
+- `components/sections/Trust.tsx`
+  - Grid com logos (com placeholder)
+  - Alternativa: Mosaico dinâmico por setor atendido
+
+## 9. CTA Final
+- `components/sections/CallToAction.tsx`
+  - Reforço de CTA com formulário de contato integrado
+  - Captura de nome, e-mail, área de atuação
+  - Validação básica e UX fluida
+
+## 10. Footer
+- `components/sections/Footer.tsx`
+  - Links organizados por categoria
+  - Social icons com `lucide-react`
+  - Área de política de privacidade e termos
+
+---
+
+# 🧠 Vibe-Coding — Padrões Obrigatórios
+
+- Componentes com nome claro, uma responsabilidade e `Props` bem definidos
+- Código DRY, coeso e reutilizável
+- Separação de lógica: use `hooks/`, `lib/`, `utils/`
+- Layouts devem vir de `layouts/Default.tsx`
+- Metadados configurados em `app/head.tsx`
+- Utilizar `env` para variáveis de integração
+- Usar `eslint`, `prettier` e `typescript strict`
+
+---
+
+# 🔐 Segurança & Boas Práticas
+- Validação de input e escape de output
+- Nada hardcoded: dados de exemplo via mock ou JSON externo
+- Estrutura pronta para internacionalização com `next-i18next` (optativo)
+- Implementar sistema de tracking leve com consentimento (cookie banner via `next-themes` ou `cookie-consent` lib)
+
+---
+
+# 🧪 Testabilidade e Extensibilidade
+- Componentes devem ser testáveis com `@testing-library/react`
+- Formulários prontos para integração com serviços externos (n8n, Zapier)
+- Estrutura de arquivos limpa e em conformidade com `feature-first design`
+
+---
+
+# 📄 Extras
+- Utilize como base visual o layout do PDF referenciado (landing page modelo)
+- Garanta que o código seja facilmente legível por IA assistentes no Lovable.dev
+- Caso precise dividir em arquivos, mantenha a coerência entre seções com comentários `// Section: ...`
+
+---
+

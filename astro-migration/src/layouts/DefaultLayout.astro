@@ -1,0 +1,19 @@
+---
+import CookieBanner from '../components/ui/CookieBanner';
+---
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page da Elohit Sync — IA aplicada a negócios e automações inteligentes." />
+    <title>Elohit Sync</title>
+    <slot name="head" />
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div class="fixed top-4 right-4 z-50">
+      <LanguageSwitcher client:load lang={Astro.url.searchParams.get('lang') ?? 'pt'} onChange={(lang) => window.location.search = `?lang=${lang}`} />
+    </div>
+    <slot />
+    <CookieBanner client:load />
+  </body>
+</html>
