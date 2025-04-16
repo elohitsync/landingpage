@@ -1,7 +1,7 @@
 // Simple i18n implementation for Astro/React
 export const translations = {
   pt: {
-    heroTitle: 'Gerencie, automatize e escale com Inteligência Artificial aplicada aos seus processos.',
+    heroTitle: 'Torne seus processos empresariais em soluções automatizadas com I.A. - Use seu tempo para focar em coisas que realmente importam.',
     heroSubtitle: 'Transforme operações burocráticas e complexas em fluxos inteligentes com nossa solução de gestão de I.A., projetada para gerar economia, resultados reais mensuráveis e escalabilidade.',
     cta: 'Fale Conosco',
     services: 'Serviços',
